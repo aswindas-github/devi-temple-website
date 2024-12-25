@@ -1,11 +1,10 @@
 .home {
-  background-image: url('../assets/images/temple-background.jpg');
-  background-size: cover; /* Ensures the background covers the container */
-  background-position: center; /* Centers the background */
-  background-repeat: no-repeat; /* Prevents repeating */
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full width */
-  position: relative; /* For overlay positioning */
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/temple-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,3 +31,34 @@
   font-family: 'Roboto', sans-serif;
   margin-top: 10px;
 }
+
+button, .btn {
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.parallax {
+  background-image: url('../assets/images/temple-parallax.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
