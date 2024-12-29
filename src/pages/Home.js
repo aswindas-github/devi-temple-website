@@ -1,7 +1,22 @@
 import React from 'react';
 import './Home.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect,useState } from 'react';
 
 function Home() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+  const [darkMode, setDarkMode] = useState(false);
+
+const toggleDarkMode = () => {
+  setDarkMode(!darkMode);
+  document.body.classList.toggle('dark-mode');
+};
+
   return (
     <div className="home">
       <div id="homeCarousel" className="carousel slide" data-bs-ride="carousel">
@@ -38,7 +53,11 @@ function Home() {
         </button>
       </div>
       <div className="overlay-text">
-        <h1>കുന്നത്ത് ശ്രീഭഗവതി ക്ഷേത്രം</h1>
+      <div data-aos="fade-up">
+      <h1>കുന്നത്ത് ശ്രീഭഗവതി ക്ഷേത്രം</h1>
+      </div>
+
+        
         <p>"അമ്മേ നാരായണ"</p>
         <p>"ഓം സർവ്വ മംഗള മംഗല്യേ</p>
         <p>ശിവേ സർവ്വാർത്ഥ സാധികേ</p>

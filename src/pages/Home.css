@@ -62,3 +62,11 @@ button:hover, .btn:hover {
   justify-content: center;
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+#map {
+  margin-top: 20px;
+}

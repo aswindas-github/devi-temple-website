@@ -11,16 +11,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Gallery from './pages/Gallery'
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
+import './App.css';
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   
   return (
+    <div className={darkMode ? 'dark-mode' : 'light-mode'}>
     <Router>
-      <Navbar />
+      <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -28,10 +37,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
-       
       </Routes>
       <Footer />
     </Router>
+  </div>
   );
 }
 
