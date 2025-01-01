@@ -13,6 +13,11 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect,useState } from 'react';
 import './App.css';
+import Terms from './pages/Terms';
+import Disclaimer from './pages/Disclaimer';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -37,6 +42,10 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
       </Routes>
       <Footer />
     </Router>
