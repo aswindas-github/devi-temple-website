@@ -1,0 +1,19 @@
+.rules-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e9f7e9;
+    border: 1px solid #a4d3a4;
+    border-radius: 8px;
+  }
+  
+  .rules-title {
+    color: #2a7a2a;
+    margin-bottom: 10px;
+  }
+  
+  .rules-list {
+    list-style-type: decimal;
+    padding-left: 20px;
+    color: #333;
+  }
+  

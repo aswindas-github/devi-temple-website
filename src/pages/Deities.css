@@ -1,0 +1,32 @@
+.deities-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #fef9f3;
+    border: 1px solid #f2d8b5;
+    border-radius: 8px;
+  }
+  
+  .deities-title {
+    color: #d35400;
+    margin-bottom: 15px;
+  }
+  
+  .deities-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .deity-item {
+    margin-bottom: 15px;
+  }
+  
+  .deity-item h3 {
+    color: #e67e22;
+    margin: 0 0 5px;
+  }
+  
+  .deity-item p {
+    color: #555;
+    margin: 0;
+  }
+  

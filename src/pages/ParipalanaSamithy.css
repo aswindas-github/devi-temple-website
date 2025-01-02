@@ -1,0 +1,34 @@
+.committee-container {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+  
+  .committee-title {
+    color: #2d3436;
+    margin-bottom: 15px;
+  }
+  
+  .committee-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .committee-table th,
+  .committee-table td {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .committee-table th {
+    background-color: #f1f3f5;
+    color: #495057;
+  }
+  
+  .committee-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  

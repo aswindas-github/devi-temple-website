@@ -18,6 +18,12 @@ import Disclaimer from './pages/Disclaimer';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Announcements from './pages/Announcements';
+import TempleRules from './pages/TempleRules';
+import News from './pages/News';
+import Deities from './pages/Deities';
+import TempleTiming from './pages/TempleTiming';
+import ParipalanaSamithy from './pages/ParipalanaSamithy';
 
 function App() {
 
@@ -46,6 +52,12 @@ function App() {
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/announcements" element={<Announcements />} />
+        <Route path="/templeRules" element={<TempleRules />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/deities" element={<Deities />} />
+        <Route path="/templeTiming" element={<TempleTiming />} />
+        <Route path="/paripalanaSamithy" element={<ParipalanaSamithy />} />
       </Routes>
       <Footer />
     </Router>

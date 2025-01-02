@@ -16,6 +16,12 @@ function Navbar({ toggleDarkMode, darkMode }) {
             <li className="nav-item"><Link className="nav-link" to="/services">Services</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/contact">Contact</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/gallery">Gallery</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/announcements">Announcements</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/deities">Deities</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/news">News</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/paripalanaSamithy">ParipalanaSamithy</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/templeRules">TempleRules</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/templeTiming">TempleTiming</Link></li>
           </ul>
           <button className="btn btn-outline-light ms-3" onClick={toggleDarkMode}>
             {darkMode ? 'Light Mode' : 'Dark Mode'}
